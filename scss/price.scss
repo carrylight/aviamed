@@ -1,0 +1,8 @@
+.am-price__block {
+	width: 750px;
+	margin: 0 auto;
+
+	@media (max-width: 991px) {
+		width: 100%;
+	}
+}

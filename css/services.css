@@ -1,0 +1,17 @@
+.am-services__item {
+  border: 1px solid #EFF3F4;
+  border-radius: 2px;
+  padding: 32px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.am-services__item-title {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 166px;
+}
+
+/*# sourceMappingURL=services.css.map */

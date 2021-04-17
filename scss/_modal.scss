@@ -1,0 +1,70 @@
+.am-modal {
+	.modal-dialog {
+		max-width: 1140px;
+	}
+	.modal-header {
+		border: none;
+		padding: 38px 42px 20px 42px;
+		position: relative;
+	}
+	.modal-body {
+		padding: 0 42px 42px 42px;
+	}
+
+	.am-modal__modal-title {
+		font-size: 24px;
+		font-weight: 700;
+	}
+	.am-modal__subtitle {
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	.am-modal__close {
+		padding: 0;
+		margin: 0;
+		width: 52px;
+		height: 52px;
+		background: url('../img/icon-cross.svg') no-repeat center $color_blue;
+		border-radius: 50%;
+		opacity: 1;
+		position: absolute;
+		top: 42px;
+		right: 42px;
+	}
+}
+
+.am-modal__item {
+	border: 1px solid #EFF3F4;
+	border-radius: 2px;
+	height: 100%;
+
+	@media (max-width: 991px) {
+		margin-bottom: 2rem;
+		height: auto;
+	}
+
+	.am-btn {
+		font-size: 14px;
+	}
+}
+.am-modal__item-content {
+	padding: 20px 24px 24px 24px;
+	display: flex;
+	flex-direction: column;
+}
+.am-modal__item-title {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.am-modal__item-address {
+	color: #585858;
+	font-size: 14px;
+	margin-bottom: 18px;
+	font-weight: 500;
+}
+.am-modal__item-text {
+	color: #585858;
+	font-size: 14px;
+	margin-bottom: 20px;
+}

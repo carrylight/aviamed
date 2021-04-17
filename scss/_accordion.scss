@@ -1,0 +1,129 @@
+/* price cards */
+.am-accordion__price-card {
+	border: 1px solid #EFF3F4 !important;
+	box-shadow: 0 10px 20px rgba(246, 250, 252, 0.4);
+
+	.collapsed .am-accordion__list-button {
+		background: $color_blue;
+		color: #ffffff;
+
+		&:after {
+			content: "+";
+		}
+	}
+}
+.am-accordion__price-card-header {
+	background: #ffffff;
+	border-bottom: 1px solid #EFF3F4;
+	padding: 24px 20px 24px 24px;
+}
+.am-accordion__list-button {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	border-radius: 50%;
+	color: $color_blue;
+	background: #EFF3F4;
+	text-align: center;
+	line-height: 30px;
+	font-size: 25px;
+	flex-shrink: 0;
+	margin-left: 80px;
+	cursor: pointer;
+
+	&:after {
+		content: "-";
+	}
+
+	@media (max-width: 767px) {
+		margin-left: 20px;
+	}
+
+	&.am-accordion__list-button_big {
+		width: 42px;
+		height: 42px;
+		line-height: 40px;
+		font-size: 32px;
+	}
+}
+.am-accordion__price-card-body {
+	padding: 20px;
+}
+
+/* faq cards */
+.am-accordion_faq {
+	border-top: 1px solid #EFF3F4;
+}
+.am-accordion__faq-card {
+	border: none !important;
+	border-bottom: 1px solid #EFF3F4 !important;
+	background: none;
+
+	.collapsed .am-accordion__list-button {
+		background: $color_blue;
+		color: #ffffff;
+
+		&:after {
+			content: "+";
+		}
+	}
+}
+.am-accordion__faq-card-header {
+	background: none;
+	border: none;
+	padding: 24px 0 20px 0;
+}
+.am-accordion__faq-card-body {
+	font-size: 16px;
+	padding: 0 0 28px 0;
+}
+
+/* all prices */
+.am-accordion__all-prices-card {
+	background: #F6FAFC;
+	border: none !important;
+
+	.collapsed .am-accordion__list-button {
+		background: $color_blue;
+		color: #ffffff;
+
+		&:after {
+			content: "+";
+		}
+	}
+}
+.am-accordion__all-prices-card-header {
+	padding: 32px 46px;
+	background: #F6FAFC;
+	border: none;
+
+	@media (max-width: 767px) {
+		padding: 16px 20px;
+	}
+}
+.am-accordion__all-prices-card-header_disabled {
+	background: #F8F8F8;
+
+	h2 {
+		color: rgba(51, 51, 51, 0.4);
+	}
+}
+.am-accordion__all-prices-text {
+	font-size: 16px;
+	line-height: 22px;
+	text-align: right;
+	font-weight: 400;
+	color: #333333;
+
+	@media (max-width: 767px) {
+		text-align: left;
+		margin-top: 8px;
+	}
+}
+.am-accordion__all-prices-card-body {
+	padding: 0 46px 8px 46px;
+
+	@media (max-width: 767px) {
+		padding: 0 20px 8px 20px;
+	}
+}

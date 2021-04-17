@@ -1,0 +1,193 @@
+.am-services__item {
+	border: 1px solid #EFF3F4;
+	border-radius: 2px;
+	padding: 22px 30px 32px 30px;
+	min-height: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-size: cover !important;
+	background-color: #ffffff !important;
+	position: relative;
+
+	&:hover {
+		border: 1px solid $color_blue;
+
+		.am-services__item-title {
+			color: $color_blue;
+		}
+	}
+
+	&.am-services__item_hospital {
+		background: url("../img/hospital.png") no-repeat center right;
+	}
+
+	&.am-services__item_cosmetology {
+		background: url("../img/cosmetology.png") no-repeat center right;
+	}
+
+	&.am-services__item_stomatology {
+		background: url("../img/stomatology.png") no-repeat center right;
+	}
+
+	&.am-services__item_vaccination {
+		background: url("../img/vaccination.png") no-repeat center right;
+	}
+
+	&.am-services__item_neurology {
+		background: url("../img/neurology.png") no-repeat center right;
+	}
+
+	&.am-services__item_gynecology {
+		background: url("../img/gynecology.png") no-repeat center right;
+	}
+
+	&.am-services__item_dietetics {
+		background: url("../img/dietetics.png") no-repeat center right;
+	}
+
+	&.am-services__item_coloproctology {
+		background: url("../img/coloproctology.png") no-repeat center right;
+	}
+
+	&.am-services__item_oncology {
+		background: url("../img/oncology.png") no-repeat center right;
+	}
+
+	&.am-services__item_pulmonology {
+		background: url("../img/pulmonology.png") no-repeat center right;
+	}
+
+	&.am-services__item_therapy {
+		background: url("../img/therapy.png") no-repeat center right;
+	}
+
+	&.am-services__item_traumatology {
+		background: url("../img/traumatology.png") no-repeat center right;
+	}
+
+	&.am-services__item_manual-therapy {
+		background: url("../img/manual-therapy.png") no-repeat center right;
+	}
+
+	&.am-services__item_massage {
+		background: url("../img/massage.png") no-repeat center right;
+	}
+
+	&.am-services__item_reflexology {
+		background: url("../img/reflexology.png") no-repeat center right;
+	}
+
+	&.am-services__item_psychiatry {
+		background: url("../img/psychiatry.png") no-repeat center right;
+	}
+
+	&.am-services__item_orthopedics {
+		background: url("../img/orthopedics.png") no-repeat center right;
+	}
+
+	&.am-services__item_physiotherapy {
+		background: url("../img/physiotherapy.png") no-repeat center right;
+	}
+
+	&.am-services__item_ophthalmologist {
+		background: url("../img/ophthalmologist.png") no-repeat center right;
+
+		.am-services__item-title {
+			max-width: 198px;
+		}
+	}
+
+	&.am-services__item_medical-board {
+		background: url("../img/medical-board.png") no-repeat center right;
+	}
+
+
+	&.am-services__item_ultrasound {
+		background: url("../img/ultrasound.png") no-repeat center right;
+	}
+
+
+	&.am-services__item_ecg {
+		background: url("../img/ecg.png") no-repeat center right;
+	}
+
+
+	&.am-services__item_certificate {
+		background: url("../img/certificate.png") no-repeat center right;
+
+		.am-services__item-title {
+			max-width: 216px;
+		}
+	}
+
+
+	&.am-services__item_disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	@media (max-width: 767px) {
+		padding: 12px 24px 24px 24px;
+	}
+}
+
+.am-services__item-gradient {
+	position: absolute;
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 70%, transparent 100%);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.am-services__item-title {
+	font-size: 18px;
+	font-weight: 500;
+	max-width: 166px;
+	display: block;
+	letter-spacing: -0.04em;
+	position: relative;
+
+	@media (max-width: 767px) {
+		font-size: 14px;
+		max-width: 126px;
+	}
+
+	&.am-services__item-title_fullwidth {
+		max-width: 100%;
+	}
+}
+
+.am-services__item-price {
+	font-size: 16px;
+	margin-top: 10px;
+
+	@media (max-width: 767px) {
+		font-size: 12px;
+	}
+}
+
+.am-services__item-text {
+	font-size: 10px;
+}
+
+/* services detail */
+.am-service__name {
+	font-size: 28px;
+	color: #ffffff;
+	font-weight: 900;
+}
+.services-details__description {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.services-img {
+	max-width: 200px;
+
+	@media (max-width: 767px) {
+		max-width: 120px;
+	}
+}

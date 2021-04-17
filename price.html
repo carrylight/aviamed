@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Aviamed</title>
+</head>
+<body class="am-page">
+<div class="am-header">
+	<div class="container">
+		<div class="am-header__content">
+			<button class="navbar-toggler collapsed d-block d-lg-none am-header__toggler" type="button"
+					data-toggle="collapse" data-target="#amTopMenu" aria-controls="amTopMenu"
+					aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon_opened">
+					<span class="fas fa-bars"></span>
+				</span>
+				<span class="navbar-toggler-icon_closed">
+					<span class="fas fa-times"></span>
+				</span>
+			</button>
+
+			<div class="am-header__contacts d-none d-lg-flex">
+				<div class="am-header__icon am-header__icon_location">
+					<i class="fas fa-location-arrow"></i>
+				</div>
+				<div>
+					<div class="btn-group">
+						<button type="button" class="am-header__modal-btn"
+								data-toggle="modal" data-target="#chooseOffice">
+							<span class="am-header__modal-btn-text">Многопрофильный медицинский центр</span>
+							<i class="fas fa-chevron-down"></i>
+						</button>
+					</div>
+					<div>Москва, Уланский пер., д. 22, стр. 1</div>
+				</div>
+			</div>
+
+			<a href="index.html" class="am-header__logo"></a>
+
+			<div class="am-header__contacts">
+				<div class="d-none d-lg-block">
+					<a href="tel:+7 (495) 607-01-67" class="am-header__contacts-phone">+7 (495) 607-01-67</a>
+					<div class="am-link">Перезвоните мне</div>
+				</div>
+				<button type="button" class="am-header__icon am-header__icon_phone">
+					<i class="fas fa-phone-alt"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="am-header__bottom">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg am-header-navbar">
+				<div class="collapse navbar-collapse am-header__bottom-content" id="amTopMenu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item am-nav-item">
+							<a class="nav-link" href="services.html">Услуги</a>
+						</li>
+						<li class="nav-item am-nav-item">
+							<a class="nav-link" href="#">Цены</a>
+						</li>
+						<li class="nav-item am-nav-item">
+							<a class="nav-link" href="#">Акции</a>
+						</li>
+						<li class="nav-item am-nav-item">
+							<a class="nav-link" href="doctors-list.html">Врачи</a>
+						</li>
+						<li class="nav-item am-nav-item">
+							<a class="nav-link" href="#">Пациентам</a>
+						</li>
+						<li class="nav-item am-nav-item">
+							<a class="nav-link" href="#">Корпоративным клиентам</a>
+						</li>
+						<li class="nav-item am-nav-item dropdown active">
+							<a class="nav-link dropdown-toggle" href="#" id="aboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">О нас</a>
+							<div class="dropdown-menu" aria-labelledby="aboutUs">
+								<a class="dropdown-item" href="#">О клинике</a>
+								<a class="dropdown-item" href="#">Руководство</a>
+								<a class="dropdown-item" href="#">Отзывы</a>
+								<a class="dropdown-item" href="#">Новости и статьи</a>
+							</div>
+						</li>
+						<li class="nav-item am-nav-item">
+							<a class="nav-link" href="#">
+								<span class="am-nav-link_plane"></span>
+								ВЛЭК
+							</a>
+						</li>
+						<li class="nav-item am-nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
+					<form class="form-inline">
+						<button class="am-btn_bordered">
+							<span class="search-icon"></span>
+						</button>
+						<button type="button" class="am-btn am-btn_menu ml-2">Записаться на прием</button>
+					</form>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="am-content">
+	<div class="am-controls mb-5">
+		<div class="container">
+			<div class="am-breadcrumbs text-center mb-3">
+				<ul itemscope itemtype="https://schema.org/BreadcrumbList">
+					<li itemprop=itemListElement itemscope itemtype="https://schema.org/ListItem">
+						<a href="#" class="am-breadcrumbs__item" itemprop="item">
+							<span itemprop="name">Главная</span>
+							<meta itemprop="position" content="1"/>
+						</a>
+						<span class="am-breadcrumbs__item" itemprop="item">
+						<span itemprop="name">Услуги</span>
+						<meta itemprop="position" content="3"/>
+					</span>
+					</li>
+				</ul>
+			</div>
+			<div class="text-center mb-5 am-controls__select">
+				Услуги в
+				<div class="btn-group">
+					<button type="button" class="am-controls__dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="am-controls__dropdown-text">Филиал на Сахарова</span>
+						<i class="fas fa-chevron-down"></i>
+					</button>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+					</div>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
+					<div class="input-group mb-5">
+						<div class="input-group-prepend">
+							<button class="am-controls__search-btn" type="button">
+								<span class="search-icon"></span>
+							</button>
+						</div>
+						<input type="text" class="form-control am-controls__search-input" placeholder="Поиск, например: боль в спине, артрит, ортопед" aria-label="">
+					</div>
+				</div>
+			</div>
+			<div class="am-controls__tabs-container">
+				<div class="am-controls__tabs">
+					<div class="am-controls__tab am-controls__tab_active">Поликлиника</div>
+					<div class="am-controls__tab">Диагностика</div>
+					<div class="am-controls__tab">Анализы</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="am-price__block pb-7">
+			<div class="accordion am-accordion" id="allPrices">
+				<div class="card mb-2 mb-lg-4 am-accordion__all-prices-card">
+					<div class="card-header am-accordion__all-prices-card-header" id="allPricesListItemOne">
+						<h2 class="mb-0 d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#allPricesCollapseOne" aria-expanded="true" aria-controls="allPricesCollapseOne">
+							Дневной стационар
+							<span class="am-accordion__list-button"></span>
+						</h2>
+					</div>
+					<div id="allPricesCollapseOne" class="collapse show" aria-labelledby="allPricesListItemOne" data-parent="#allPrices">
+						<div class="card-body am-accordion__all-prices-card-body">
+							<div class="accordion am-accordion" id="pricesList">
+								<div class="card mb-2 mb-lg-4 am-accordion__price-card">
+									<div class="card-header am-accordion__price-card-header" id="pricesListItemOne">
+										<h3 class="mb-0 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Стоматология общая
+											<span class="am-accordion__list-button"></span>
+										</h3>
+									</div>
+									<div id="collapseOne" class="collapse" aria-labelledby="pricesListItemOne" data-parent="#pricesList">
+										<div class="card-body am-accordion__price-card-body">
+											<div class="mb-2 am-doctor__price-item am-doctor__price-item_grey">
+												<div>
+													<div class="am-doctor__price-item-title">Доплата за пребывание в палате повышенной комфортности</div>
+													<div>(2-местная палата) до одного часа</div>
+												</div>
+												<div class="am-doctor__price-item-content mt-2 mt-md-0">
+													<div class="am-doctor__price-item-price">
+														400 руб.
+													</div>
+													<div>
+														<button type="button" class="am-doctor__price-item-btn">
+															<i class="am-doctor__price-item-btn-icon"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="mb-2 am-doctor__price-item am-doctor__price-item_grey">
+												<div>
+													<div class="am-doctor__price-item-title">Доплата за пребывание в палате повышенной комфортности</div>
+													<div>(2-местная палата) до одного часа</div>
+												</div>
+												<div class="am-doctor__price-item-content mt-2 mt-md-0">
+													<div class="am-doctor__price-item-price">
+														400 руб.
+													</div>
+													<div>
+														<button type="button" class="am-doctor__price-item-btn">
+															<i class="am-doctor__price-item-btn-icon"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="mb-2 am-doctor__price-item am-doctor__price-item_grey">
+												<div>
+													<div class="am-doctor__price-item-title">Доплата за пребывание в палате повышенной комфортности</div>
+													<div>(2-местная палата) до одного часа</div>
+												</div>
+												<div class="am-doctor__price-item-content mt-2 mt-md-0">
+													<div class="am-doctor__price-item-price">
+														400 руб.
+													</div>
+													<div>
+														<button type="button" class="am-doctor__price-item-btn">
+															<i class="am-doctor__price-item-btn-icon"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 mb-lg-4 am-accordion__price-card">
+									<div class="card-header am-accordion__price-card-header" id="pricesListItemTwo">
+										<h3 class="mb-0 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+											Стоматология терапевтическая
+											<span class="am-accordion__list-button"></span>
+										</h3>
+									</div>
+									<div id="collapseTwo" class="collapse" aria-labelledby="pricesListItemTwo" data-parent="#pricesList">
+										<div class="card-body am-accordion__price-card-body">
+											<div class="mb-2 am-doctor__price-item am-doctor__price-item_grey">
+												<div>
+													<div class="am-doctor__price-item-title">Доплата за пребывание в палате повышенной комфортности</div>
+													<div>(2-местная палата) до одного часа</div>
+												</div>
+												<div class="am-doctor__price-item-content mt-2 mt-md-0">
+													<div class="am-doctor__price-item-price">
+														400 руб.
+													</div>
+													<div>
+														<button type="button" class="am-doctor__price-item-btn">
+															<i class="am-doctor__price-item-btn-icon"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="mb-2 am-doctor__price-item am-doctor__price-item_grey">
+												<div>
+													<div class="am-doctor__price-item-title">Доплата за пребывание в палате повышенной комфортности</div>
+													<div>(2-местная палата) до одного часа</div>
+												</div>
+												<div class="am-doctor__price-item-content mt-2 mt-md-0">
+													<div class="am-doctor__price-item-price">
+														400 руб.
+													</div>
+													<div>
+														<button type="button" class="am-doctor__price-item-btn">
+															<i class="am-doctor__price-item-btn-icon"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="mb-2 am-doctor__price-item am-doctor__price-item_grey">
+												<div>
+													<div class="am-doctor__price-item-title">Доплата за пребывание в палате повышенной комфортности</div>
+													<div>(2-местная палата) до одного часа</div>
+												</div>
+												<div class="am-doctor__price-item-content mt-2 mt-md-0">
+													<div class="am-doctor__price-item-price">
+														400 руб.
+													</div>
+													<div>
+														<button type="button" class="am-doctor__price-item-btn">
+															<i class="am-doctor__price-item-btn-icon"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 mb-lg-4 am-accordion__price-card">
+									<div class="card-header am-accordion__price-card-header" id="pricesListItemThree">
+										<h3 class="mb-0 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+											Виниры, искусственные коронки
+											<span class="am-accordion__list-button"></span>
+										</h3>
+									</div>
+									<div id="collapseThree" class="collapse" aria-labelledby="pricesListItemThree" data-parent="#pricesList">
+										<div class="card-body am-accordion__price-card-body">
+											<div class="mb-2 am-doctor__price-item am-doctor__price-item_grey">
+												<div>
+													<div class="am-doctor__price-item-title">Доплата за пребывание в палате повышенной комфортности</div>
+													<div>(2-местная палата) до одного часа</div>
+												</div>
+												<div class="am-doctor__price-item-content mt-2 mt-md-0">
+													<div class="am-doctor__price-item-price">
+														400 руб.
+													</div>
+													<div>
+														<button type="button" class="am-doctor__price-item-btn">
+															<i class="am-doctor__price-item-btn-icon"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="mb-2 am-doctor__price-item am-doctor__price-item_grey">
+												<div>
+													<div class="am-doctor__price-item-title">Доплата за пребывание в палате повышенной комфортности</div>
+													<div>(2-местная палата) до одного часа</div>
+												</div>
+												<div class="am-doctor__price-item-content mt-2 mt-md-0">
+													<div class="am-doctor__price-item-price">
+														400 руб.
+													</div>
+													<div>
+														<button type="button" class="am-doctor__price-item-btn">
+															<i class="am-doctor__price-item-btn-icon"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="mb-2 am-doctor__price-item am-doctor__price-item_grey">
+												<div>
+													<div class="am-doctor__price-item-title">Доплата за пребывание в палате повышенной комфортности</div>
+													<div>(2-местная палата) до одного часа</div>
+												</div>
+												<div class="am-doctor__price-item-content mt-2 mt-md-0">
+													<div class="am-doctor__price-item-price">
+														400 руб.
+													</div>
+													<div>
+														<button type="button" class="am-doctor__price-item-btn">
+															<i class="am-doctor__price-item-btn-icon"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card mb-2 mb-lg-4 am-accordion__all-prices-card">
+					<div class="card-header am-accordion__all-prices-card-header" id="allPricesListItemTwo">
+						<h2 class="mb-0 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#allPricesCollapseTwo" aria-expanded="true" aria-controls="allPricesCollapseTwo">
+							Вакцинация
+							<span class="am-accordion__list-button"></span>
+						</h2>
+					</div>
+					<div id="allPricesCollapseTwo" class="collapse" aria-labelledby="allPricesListItemTwo" data-parent="#allPrices">
+						<div class="card-body am-accordion__all-prices-card-body">
+							<div class="accordion am-accordion" id="pricesList2">
+								Карточки с вакцинацией
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card mb-2 mb-lg-4 am-accordion__all-prices-card">
+					<div class="card-header am-accordion__all-prices-card-header" id="allPricesListItemThree">
+						<h2 class="mb-0 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#allPricesCollapseThree" aria-expanded="true" aria-controls="allPricesCollapseThree">
+							Косметология
+							<span class="am-accordion__list-button"></span>
+						</h2>
+					</div>
+					<div id="allPricesCollapseThree" class="collapse" aria-labelledby="allPricesListItemThree" data-parent="#allPrices">
+						<div class="card-body am-accordion__all-prices-card-body">
+							<div class="accordion am-accordion" id="pricesList3">
+								Карточки с косметологией
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card mb-2 mb-lg-4 am-accordion__all-prices-card">
+					<div class="card-header am-accordion__all-prices-card-header am-accordion__all-prices-card-header_disabled" id="allPricesListItemFour">
+						<h2 class="mb-0 d-flex flex-column flex-md-row justify-content-between align-items-md-center collapsed" data-toggle="collapse" data-target="#allPricesCollapseFour" aria-expanded="true" aria-controls="allPricesCollapseFour">
+							Психиатрия и наркология
+							<span class="am-accordion__all-prices-text">
+								Отсутствует в выбранном филиале. <br/>
+								<a href="#" class="am-link">Выберите другой</a>
+							</span>
+						</h2>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="am-footer">
+	<div class="am-footer-top">
+		<div class="container">
+			<div class="row mb-5 mb-md-0 mb-lg-5">
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="am-footer__item">
+						<div class="am-footer__item-content">
+							<div class="am-footer__item-title">Многопрофильный мед. центр</div>
+							<div class="mb-2">г. Москва, Уланский переулок, д. 22, стр.1</div>
+							<div class="am-footer__item-text_sm">Вход для пациентов со стороны пр. Академика Сахарова. (Вход в отделение лучевой диагностики только со двора)</div>
+							<a href="tel:+7 (495) 607 01 67">+7 (495) 607 01 67</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="am-footer__item">
+						<div class="am-footer__item-content">
+							<div class="am-footer__item-title">Филиал на Будённого</div>
+							<div class="mb-2">г. Москва, ул. Проспект Будённого, д. 18а</div>
+							<a href="tel:+7 (495) 607 05 55">+7 (495) 607 05 55</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="am-footer__item">
+						<div class="am-footer__item-content">
+							<div class="am-footer__item-title">Филиал в Томилино</div>
+							<div class="mb-2">Московская область, Люберецкий район, пос. Томилино, ул. Гаршина, д.26 к.152</div>
+							<a href="tel:+7 (495) 607 01 67">+7 (495) 607 01 67</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row am-footer__second-level">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="am-footer__item">
+						<div class="am-footer__item-content">
+							<div class="am-footer__item-title_bottom">Антикоррупционная политика</div>
+							<div class="mt-4">
+								<a href="tel:+7 (495) 607 01 67" class="mr-3">+7 (495) 607 01 67</a>
+								<a href="mailto:hotline@rostec.ru">hotline@rostec.ru</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 offset-lg-4">
+					<div class="am-footer__item">
+						<div class="am-footer__item-content">
+							<div class="am-footer__item-title_bottom">Контакты</div>
+							<div class="am-footer__item-contacts mt-md-3">
+								<a href="#" class="am-footer__icon-instagram"></a>
+								<a href="#" class="am-footer__icon-youtube"></a>
+								<a href="#" class="am-footer__item-call">
+									<span class="am-footer__icon-phone"></span>
+									<span class="am-link am-link_white">Обратный<br/> звонок</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="am-footer-bottom">
+			<div class="row">
+				<div class="col-12 col-lg-6 mb-3 mb-lg-0">
+					Данный сайт носит информационный характер и не является публичной офертой, определяемой положениями Статьи 437 (2) ГК РФ.
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="text-lg-right">
+						Центравиамед © 2021  /
+						<a href="#">Юридическая информация</a>  /
+						<a href="#">Руководство</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade am-modal" id="chooseOffice" tabindex="-1" role="dialog" aria-labelledby="chooseOfficeTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">
+					<h5 class="modal-title am-modal__modal-title" id="chooseOfficeTitle">Выберите предпочтительный филиал</h5>
+					<button type="button" class="close am-modal__close" data-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="am-modal__subtitle">Мы покажем услуги, цены и врачей, доступных в выбранном  филиале</div>
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<div class="am-modal__item">
+								<div class="am-modal__item-img">
+									<img src="img/temp/office-1.png" alt="office-1">
+									<div class="am-modal__item-content">
+										<div>
+											<div class="am-modal__item-title">Филиал на Сахарова</div>
+											<div class="am-modal__item-address">Москва, Уланский переулок, д. 22, стр.1</div>
+											<div class="am-modal__item-text">Медицинский центр премиум-класса с передовым оснащением и полным комплексом услуг</div>
+										</div>
+										<button type="button" class="am-btn am-btn_grey am-btn_block">Выбран</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="am-modal__item">
+								<div class="am-modal__item-img">
+									<img src="img/temp/office-2.png" alt="office-2">
+									<div class="am-modal__item-content">
+										<div>
+											<div class="am-modal__item-title">Филиал на Буденного</div>
+											<div class="am-modal__item-address">Москва, ул. Проспект Будённого, д. 18а</div>
+											<div class="am-modal__item-text">Комфортабельный стационар и профосмотры для наших корпоративных клиентов</div>
+										</div>
+										<button type="button" class="am-btn am-btn_bordered am-btn_block">Выбрать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="am-modal__item">
+								<div class="am-modal__item-img">
+									<img src="img/temp/office-1.png" alt="office-1">
+									<div class="am-modal__item-content">
+										<div>
+											<div class="am-modal__item-title">Филиал в Томилино</div>
+											<div class="am-modal__item-address">Московская область, Люберецкий район, пос. Томилино, ул. Гаршина, д.26 к.152</div>
+											<div class="am-modal__item-text">"Народный" медицинский центр в Подмосковье</div>
+										</div>
+										<button type="button" class="am-btn am-btn_bordered am-btn_block">Выбрать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

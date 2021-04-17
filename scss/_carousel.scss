@@ -1,0 +1,210 @@
+/* main page carousel */
+.am-promo__carousel-item {
+	height: 500px;
+	position: relative;
+	background: $color_blue;
+
+	@media (max-width: 767px) {
+		height: 408px;
+	}
+}
+.am-promo__carousel-item-left-img {
+	background: url("../img/slider-left-img.png") no-repeat right center;
+	width: 60%;
+	position: absolute;
+	right: 40%;
+	height: 100%;
+	z-index: 3;
+
+	@media (max-width: 767px) {
+		width: 70%;
+		right: 30%;
+	}
+}
+.am-promo__carousel-item-right-img {
+	width: 100%;
+	position: absolute;
+	left: 60%;
+	height: 100%;
+	margin-left: -40px;
+
+	@media (max-width: 767px) {
+		left: 70%;
+	}
+}
+.am-promo__carousel-item-right-img_1 {
+	background: url("../img/slider-right-img.jpg") repeat-x left center;
+
+	@media (max-width: 991px) {
+		background: url("../img/slider-right-img.jpg") repeat-x -100px center;
+	}
+
+	@media (max-width: 767px) {
+		background: url("../img/slider-right-img.jpg") repeat-x -180px center;
+		background-size: cover !important;
+	}
+}
+.am-promo__carousel-item-right-img_2 {
+	background: url("../img/slider-right-img-2.jpg") repeat-x left center;
+}
+
+.am-promo__carousel-item-content {
+	color: #ffffff;
+	position: relative;
+	z-index: 4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 408px;
+}
+.am-promo__carousel-title {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 24px;
+	color: #ffffff;
+
+	@media (max-width: 991px) {
+		font-size: 24px;
+		max-width: 280px;
+	}
+
+	@media (max-width: 767px) {
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+}
+.am-promo__carousel-text {
+	font-size: 18px;
+	line-height: 150%;
+	margin-bottom: 42px;
+	max-width: 404px;
+
+	@media (max-width: 991px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 767px) {
+		font-size: 12px;
+		margin-bottom: 30px;
+	}
+}
+
+.am-promo__carousel-controls {
+	position: relative;
+}
+.am-promo__numbers {
+	position: absolute;
+	right: 0;
+	flex-direction: column;
+	left: auto;
+	margin-right: 0;
+	top: 100%;
+	bottom: auto;
+	margin-top: 250px;
+	transform: translateY(-50%);
+
+	li {
+		border: 1px solid #ffffff;
+		background: none;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		align-self: center;
+		margin-bottom: 20px;
+
+		&.active {
+			background: #F8B64C;
+			border: none;
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+
+/* doctors carousel */
+.am-doctors__carousel-wrap {
+	margin: 0 -10px;
+}
+.am-doctors__carousel {
+	.am-doctors-list__item {
+		margin: 0 10px;
+	}
+	/* для одинаковой высоты карточек */
+	.slick-track {
+		display: flex;
+	}
+	.slick-slide {
+		float: none;
+		height: auto;
+	}
+	.slick-prev,
+	.slick-next {
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		top: 47%;
+		//display: block;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		cursor: pointer;
+		color: transparent;
+		border: none;
+		outline: none;
+		background: transparent;
+		background: $color_blue;
+		border-radius: 50%;
+		width: 52px;
+		height: 52px;
+		text-align: center;
+		z-index: 10;
+		left: 2%;
+
+		@media (max-width: 991px) {
+			display: none !important;
+		}
+	}
+	.slick-next {
+		left: auto;
+		right: 2%;
+	}
+	.slick-next::before,
+	.slick-prev::before {
+		content: '';
+		background: url("../img/slider-chevron.svg") no-repeat;
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+	}
+	.slick-prev::before {
+		transform: rotate(180deg);
+	}
+
+	.slick-dots {
+		display: none !important;
+		justify-content: center;
+		margin-top: 32px;
+
+		li {
+			button {
+				width: 16px;
+				height: 16px;
+				background: #EFF3F4;
+				border-radius: 50%;
+				margin: 0 7px;
+				border: none;
+				font-size: 0;
+				outline: none;
+				cursor: pointer;
+			}
+
+			&.slick-active button {
+				background: $color_blue;
+			}
+		}
+
+		@media (max-width: 991px) {
+			display: flex !important;
+		}
+	}
+}
